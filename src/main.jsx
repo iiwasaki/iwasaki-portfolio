@@ -9,7 +9,8 @@ import {
 } from "react-router-dom"
 
 /* Pages */
-import App from './App'
+import Root from "./components/Root"
+import Home from "./components/Home"
 import Projects from './components/Projects'
 import ErrorPage from './components/ErrorPage'
 
@@ -17,11 +18,12 @@ const router = createBrowserRouter(
   createRoutesFromElements(
     <>
       <Route
+        element={<Root />}
         errorElement={<ErrorPage />}
       >
         <Route
           path="/"
-          element={<App />}
+          element={<Home />}
         >
         </Route>
         <Route

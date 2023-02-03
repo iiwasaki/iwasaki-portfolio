@@ -1,17 +1,22 @@
 import { Transition } from "@headlessui/react";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import LeftDialogue from "./LeftDialogue";
+import RightDialogue from "./RightDialogue";
+
+/* Image assets */
+import personal from "../assets/avatars/personal.png"
 
 
-export default function Projects() {
+export default function Home() {
 
     const [isShowing, setShowing] = useState(true)
     const navigate = useNavigate()
 
-    function navToHome() {
+    function navToProjects() {
         setShowing(false)
         setTimeout(() => {
-            navigate("/")
+            navigate("/projects")
         }, 1000)
     }
 
@@ -27,8 +32,10 @@ export default function Projects() {
                 leaveFrom="opacity-100"
                 leaveTo="opacity-0"
             >
-
-                <div className="w-[500px] h-[500px] bg-blue-600" onClick={navToHome}></div>
+            <LeftDialogue
+                text="Test left text!"
+                portrait={personal}
+            />
 
             </Transition>
         </>

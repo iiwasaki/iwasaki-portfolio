@@ -2,10 +2,12 @@ import { Transition } from "@headlessui/react";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import LeftDialogue from "./LeftDialogue";
+import LeftDialogueEnd from "./LeftDialogueEnd";
 import RightDialogue from "./RightDialogue";
 
 /* Image assets */
 import personal from "../assets/avatars/personal.png"
+
 
 
 export default function Home() {
@@ -32,11 +34,24 @@ export default function Home() {
                 leaveFrom="opacity-100"
                 leaveTo="opacity-0"
             >
-            <LeftDialogue
-                text="Test left text!"
-                portrait={personal}
-            />
+                <div className="w-3/4">
+                    <LeftDialogue
+                        text="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                        offset_t={0}
+                        offset_l="left-0"
 
+                    />
+                    <LeftDialogue
+                        text="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                        offset_t={1}
+                        offset_l="left-6"
+                    />
+                    <LeftDialogueEnd
+                        text="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                        offset_t={2}
+                        offset_l="left-0"
+                    />
+                </div>
             </Transition>
         </>
     )

@@ -19,10 +19,11 @@ const router = createBrowserRouter(
     <>
       <Route
         element={<Root />}
+        path="/"
         errorElement={<ErrorPage />}
       >
         <Route
-          path="/"
+          index={true}
           element={<Home />}
         >
         </Route>

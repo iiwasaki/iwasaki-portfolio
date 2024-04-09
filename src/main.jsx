@@ -11,7 +11,9 @@ import {
 /* Pages */
 import Root from "./components/Root"
 import Home from "./components/Home"
-import Projects from './components/Projects'
+import TowerSong from './components/TowerSong'
+import Portraits from "./components/Portraits"
+import SFSabotage from './components/sfsabotage'
 import ErrorPage from './components/ErrorPage'
 
 const router = createBrowserRouter(
@@ -28,8 +30,16 @@ const router = createBrowserRouter(
         >
         </Route>
         <Route
-          path="projects"
-          element={<Projects/>}
+          path="towersong"
+          element={<TowerSong/>}
+        ></Route>
+        <Route
+          path="potr"
+          element={<Portraits/>}
+        ></Route>
+        <Route
+          path="sfsabotage"
+          element={<SFSabotage/>}
         ></Route>
       </Route>
 

@@ -1,20 +1,11 @@
-import { Transition } from "@headlessui/react";
-import { useState } from "react";
-import { useNavigate } from "react-router-dom";
-import LeftDialogue from "./LeftDialogue";
-import LeftDialogueEnd from "./LeftDialogueEnd";
-import RightDialogue from "./RightDialogue";
-import NavigationBubble from "./NavigationBubble";
-import HomeBanner from "./HomeBanner";
-import HomeBannerAlt from "./HomeBannerAlt"
+
 import { LazyLoadImage } from "react-lazy-load-image-component";
-import { Link } from "react-router-dom";
 
 /* Image assets */
-import portrait_1 from "../assets/potr/portrait_1.jpg";
-import portrait_2 from "../assets/potr/portrait_2.jpg";
-import potr_cover from "../assets/potr/potr_cover.jpg";
-import potr_progression from "../assets/potr/potr_progression.jpg";
+import sfs_1 from "../assets/sfs/sfs_1.jpg";
+import sfs_2 from "../assets/sfs/sfs_2.jpg";
+import sfs_cover from "../assets/sfs/sfs_cover.jpg";
+import sfs_3 from "../assets/sfs/sfs_3.jpg";
 
 
 
@@ -31,51 +22,49 @@ export default function SFSabotage() {
                         </h1>
                     </div>
                     <div className="w-2/3 pl-8">
-                        <p className="text-sm md:text-base my-2">Portraits of the Rim is a dynamic portrait generation mod for Rimworld, a popular colony management game. The mod takes the properties of a pawn in the game and puts together
-                            a portrait of that pawn using hand-drawn assets from TwoPennyDoodle, the artist for the mod. PotR currently has about 19,000 active subscribers to the mod, and is
-                            <a className="font-bold text-blue-700" target="_blank" href="https://steamcommunity.com/sharedfiles/filedetails/?id=2937991425"> available through the Steam workshop</a>!
+                        <p className="text-sm md:text-base my-2">Science Fair Sabotage is a point-and-click puzzle game presented as a visual novel. You have one simple task: combine the various things around you in your
+                            magical backpack to create something to sabotage snobby James Worthmore's science projects all throughout his life.
                         </p>
-                        <p className="text-sm md:text-base">Portraits of the Rim was initially created through a collaboration between
-                            <a className="font-bold text-blue-700" target="_blank" href="https://www.twopennydoodle.com"> TwoPennyDoodle</a> and
-                            <a className="font-bold text-blue-700" target="_blank" href="https://www.github.com/taranchuk"> Taranchuk</a>, the original programmer for the mod. As Portraits of the Rim gained
-                            traction in the community and desire for additional support for hairs, apparrel, and xenotypes from other community mods increased, I took on the job of maintaining the mod.</p>
+                        <p className="text-sm md:text-base my-2">This "game" (if you could even permit me to call it that) was a creation born from 48 hours of design and programming as part of the Seattle Indies Game Jam 2019.
+                            I was part of a team with an artist, two composers, and another writer/programmer, and the five of us had a lot of fun making this little thing. </p>
+                        <p> Is it a good game? No. Will I keep this on my portfolio
+                            forever, even if I go on to make bigger and better games? You bet. Never forget where you came from. SFS is available to play
+                            <a className="font-bold text-blue-700" target="_blank" href="https://iiwasaki.itch.io/science-fair-sabotage"> here on itch.io</a>!</p>
                     </div>
                 </div>
                 <div className="flex flex-col md:flex-row">
                     <div className="ml-4 md:w-1/3">
                         <h2 className="font-bold underline underline-offset-4 decoration-amber-400">Technologies Used</h2>
-                        <p className="mb-4"> Unity (Scripting), C#</p>
+                        <p className="mb-4"> Unity (Editor and Scripting), C#</p>
                         <h2 className="font-bold underline underline-offset-4 decoration-amber-400">Primary Responsibilities</h2>
                         <ul className="list-disc list-inside mb-4">
-                            <li>Update source code to add compatibilities for additional mods</li>
-                            <li>Fix bugs</li>
-                            <li>Optimize the portrait texture matching algorithm to improve performance</li>
-                            <li>Monitor the Steam discussion board for bugs and status updates</li>
+                            <li>Game and system design</li>
+                            <li>Implementation and programming</li>
                         </ul>
 
                     </div>
                     <div className="md:w-2/3">
                         {/*Images*/}
                         <div className="grid grid-cols-3 gap-1 justify-center items-center px-4 ">
-                            <a href={portrait_1} target="_blank" className="col-span-3">
-                                <LazyLoadImage src={portrait_1}
+                            <a href={sfs_1} target="_blank" className="col-span-3">
+                                <LazyLoadImage src={sfs_1}
                                     alt="A screenshot of a colonist's portrait in Rimworld."
                                 />
                             </a>
-                            <a href={portrait_2} target="_blank">
-                                <LazyLoadImage src={portrait_2}
+                            <a href={sfs_2} target="_blank">
+                                <LazyLoadImage src={sfs_2}
                                     className=""
                                     alt="A collage of some of the portraits possible through Portraits of the Rim."
                                 />
                             </a>
-                            <a href={potr_cover} target="_blank">
-                                <LazyLoadImage src={potr_cover}
+                            <a href={sfs_cover} target="_blank">
+                                <LazyLoadImage src={sfs_cover}
                                     className=""
                                     alt="Portraits of the Rim cover image."
                                 />
                             </a>
-                            <a href={potr_progression} target="_blank">
-                                <LazyLoadImage src={potr_progression}
+                            <a href={sfs_3} target="_blank">
+                                <LazyLoadImage src={sfs_3}
                                     className=""
                                     alt="A sequence of portraits across age brackets for this colonist."
                                 />

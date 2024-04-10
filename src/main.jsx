@@ -14,6 +14,7 @@ import Home from "./components/Home"
 import TowerSong from './components/TowerSong'
 import Portraits from "./components/Portraits"
 import SFSabotage from './components/sfsabotage'
+import Publications from './components/Publications'
 import ErrorPage from './components/ErrorPage'
 
 const router = createBrowserRouter(
@@ -40,6 +41,10 @@ const router = createBrowserRouter(
         <Route
           path="sfsabotage"
           element={<SFSabotage/>}
+        ></Route>
+        <Route
+          path="publications"
+          element={<Publications/>}
         ></Route>
       </Route>
 

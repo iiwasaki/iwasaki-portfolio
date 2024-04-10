@@ -6,7 +6,6 @@ export default function ErrorPage() {
 
     return (
         <div>
-            {/* Navbar here */}
             <h1> Sorry, an error has occurred! </h1>
             <p>
                 <i> {error.statusText || error.message}</i>

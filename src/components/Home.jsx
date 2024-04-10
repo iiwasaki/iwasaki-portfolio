@@ -1,10 +1,3 @@
-import { Transition } from "@headlessui/react";
-import { useState } from "react";
-import { useNavigate } from "react-router-dom";
-import LeftDialogue from "./LeftDialogue";
-import LeftDialogueEnd from "./LeftDialogueEnd";
-import RightDialogue from "./RightDialogue";
-import NavigationBubble from "./NavigationBubble";
 import HomeBanner from "./HomeBanner";
 import HomeBannerAlt from "./HomeBannerAlt"
 import { LazyLoadImage } from "react-lazy-load-image-component";

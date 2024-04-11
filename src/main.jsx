@@ -13,7 +13,7 @@ import Root from "./components/Root"
 import Home from "./components/Home"
 import TowerSong from './components/TowerSong'
 import Portraits from "./components/Portraits"
-import SFSabotage from './components/sfsabotage'
+import SFSabotage from './components/SFSabotage'
 import Publications from './components/Publications'
 import ErrorPage from './components/ErrorPage'
 
